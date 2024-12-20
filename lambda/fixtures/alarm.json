@@ -1,0 +1,29 @@
+{
+  "AlarmName": "GuardrailIntervenedAlarm",
+  "AlarmDescription": "This alarm triggers when a guardrail intervention occurs",
+  "AWSAccountId": "147997158015",
+  "AlarmConfigurationUpdatedTimestamp": "2024-12-03T00:21:04.573+0000",
+  "NewStateValue": "ALARM",
+  "NewStateReason": "Threshold Crossed: 1 datapoint [30.0 (03/12/24 05:28:00)] was greater than the threshold (0.0).",
+  "StateChangeTime": "2024-12-03T05:29:33.918+0000",
+  "Region": "US West (Oregon)",
+  "AlarmArn": "arn:aws:cloudwatch:us-west-2:147997158015:alarm:GuardrailIntervenedAlarm",
+  "OldStateValue": "INSUFFICIENT_DATA",
+  "OKActions": [],
+  "AlarmActions": ["arn:aws:sns:us-west-2:147997158015:GuardrailAlarmTopic"],
+  "InsufficientDataActions": [],
+  "Trigger": {
+    "MetricName": "GUARDRAIL_INTERVENED",
+    "Namespace": "/aws/Bedrock/Guardrails",
+    "StatisticType": "Statistic",
+    "Statistic": "SUM",
+    "Unit": null,
+    "Dimensions": [],
+    "Period": 60,
+    "EvaluationPeriods": 1,
+    "ComparisonOperator": "GreaterThanThreshold",
+    "Threshold": 0,
+    "TreatMissingData": "missing",
+    "EvaluateLowSampleCountPercentile": ""
+  }
+}

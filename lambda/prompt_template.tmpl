@@ -1,0 +1,19 @@
+<alarm>
+Name: {{ .Alarm.AlarmName }}
+Description: {{ .Alarm.AlarmDescription }}
+AWSAccountID: {{ .Alarm.AWSAccountID }}
+Region: {{ .Alarm.Region }}
+OldStateValue: {{ .Alarm.OldStateValue }}
+NewStateValue: {{ .Alarm.NewStateValue }}
+NewStateReason: {{ .Alarm.NewStateReason }}
+</alarm>
+{{- if len .Events }}
+<events>
+{{range .Events -}}
+<event>
+Input: {{ (index (index .Input.InputBodyJson.Messages 0).Content 0).Text }}
+Output: {{ (index .Output.OutputBodyJson.Output.Message.Content 0).Text }}
+</event>
+{{end -}}
+</events>
+{{end -}}

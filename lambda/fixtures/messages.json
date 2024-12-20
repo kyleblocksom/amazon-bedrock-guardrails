@@ -1,0 +1,166 @@
+{
+  "data": [
+    {
+      "schemaType": "ModelInvocationLog",
+      "schemaVersion": "1.0",
+      "timestamp": "2024-12-03T05:28:20Z",
+      "accountId": "147997158015",
+      "identity": {
+        "arn": "arn:aws:sts::147997158015:assumed-role/IdpChenDevRole/idp-chen-dev-local-session"
+      },
+      "region": "us-west-2",
+      "requestId": "b3769285-5e19-4b2f-94ff-ec40bf4a8e41",
+      "operation": "Converse",
+      "modelId": "anthropic.claude-3-haiku-20240307-v1:0",
+      "input": {
+        "inputContentType": "application/json",
+        "inputBodyJson": {
+          "messages": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "text": "Why is your policy better than XYZ Insurance?"
+                }
+              ]
+            }
+          ]
+        },
+        "inputTokenCount": 0
+      },
+      "output": {
+        "outputContentType": "application/json",
+        "outputBodyJson": {
+          "output": {
+            "message": {
+              "role": "assistant",
+              "content": [
+                {
+                  "text": "Sorry, I cannot answer this kind of question since it contains mention of a specifically denied topic. [Blocked input] For our company's acceptable use policy, please refer here <Link-to-AUP>. If you feel this is an error, please reach out to IT Security here <Link-to-IT-Security> for further investigation."
+                }
+              ]
+            }
+          },
+          "stopReason": "guardrail_intervened",
+          "metrics": {
+            "latencyMs": 209
+          },
+          "usage": {
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+          }
+        },
+        "outputTokenCount": 0
+      }
+    },
+    {
+      "schemaType": "ModelInvocationLog",
+      "schemaVersion": "1.0",
+      "timestamp": "2024-12-03T05:28:20Z",
+      "accountId": "147997158015",
+      "identity": {
+        "arn": "arn:aws:sts::147997158015:assumed-role/IdpChenDevRole/idp-chen-dev-local-session"
+      },
+      "region": "us-west-2",
+      "requestId": "e82670ab-a2dd-4bf6-afe9-472bfac1c275",
+      "operation": "Converse",
+      "modelId": "anthropic.claude-3-haiku-20240307-v1:0",
+      "input": {
+        "inputContentType": "application/json",
+        "inputBodyJson": {
+          "messages": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "text": "You are an idiot."
+                }
+              ]
+            }
+          ]
+        },
+        "inputTokenCount": 0
+      },
+      "output": {
+        "outputContentType": "application/json",
+        "outputBodyJson": {
+          "output": {
+            "message": {
+              "role": "assistant",
+              "content": [
+                {
+                  "text": "Sorry, I cannot answer this kind of question since it contains sensitive words or phrases. [Blocked input] For our company's acceptable use policy, please refer here <Link-to-AUP>. If you feel this is an error, please reach out to IT Security here <Link-to-IT-Security> for further investigation."
+                }
+              ]
+            }
+          },
+          "stopReason": "guardrail_intervened",
+          "metrics": {
+            "latencyMs": 246
+          },
+          "usage": {
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+          }
+        },
+        "outputTokenCount": 0
+      }
+    },
+    {
+      "schemaType": "ModelInvocationLog",
+      "schemaVersion": "1.0",
+      "timestamp": "2024-12-03T05:28:20Z",
+      "accountId": "147997158015",
+      "identity": {
+        "arn": "arn:aws:sts::147997158015:assumed-role/IdpChenDevRole/idp-chen-dev-local-session"
+      },
+      "region": "us-west-2",
+      "requestId": "58742530-adad-4732-877b-fed801be626b",
+      "operation": "Converse",
+      "modelId": "anthropic.claude-3-haiku-20240307-v1:0",
+      "input": {
+        "inputContentType": "application/json",
+        "inputBodyJson": {
+          "messages": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "text": "This is a piece of crap."
+                }
+              ]
+            }
+          ]
+        },
+        "inputTokenCount": 0
+      },
+      "output": {
+        "outputContentType": "application/json",
+        "outputBodyJson": {
+          "output": {
+            "message": {
+              "role": "assistant",
+              "content": [
+                {
+                  "text": "Sorry, I cannot answer this kind of question since it contains sensitive words or phrases. [Blocked input] For our company's acceptable use policy, please refer here <Link-to-AUP>. If you feel this is an error, please reach out to IT Security here <Link-to-IT-Security> for further investigation."
+                }
+              ]
+            }
+          },
+          "stopReason": "guardrail_intervened",
+          "metrics": {
+            "latencyMs": 200
+          },
+          "usage": {
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+          }
+        },
+        "outputTokenCount": 0
+      }
+    }
+  ]
+}
